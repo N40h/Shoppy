@@ -4,6 +4,8 @@ body {
     padding: 0;
     font-family: 'Dancing Script', cursive, sans-serif;
     background-color: #bde0fe;
+    color: #22223b;
+    user-select: none;
 }
 
 .container {
@@ -20,7 +22,7 @@ img {
 
 input {
     color: #4a4e69;
-    background-color: #f2e9e4;
+    background-color: #f7edf0;
     border: 0;
     padding: 15px;
     border-radius: 8px;
@@ -41,6 +43,11 @@ button {
     font-family: 'Caveat', cursive, sans-serif;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: #ffafcc;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -51,11 +58,15 @@ ul {
 
 ul li {
     font-size: 1.25rem;
-    /* background-color: #FFFDF8; */
-    background-color: #cdb4db;
+    background-color: #e7e6f7;
     padding: 15px;
     border-radius: 8px;
     flex-grow: 1;
     text-align: center;
     box-shadow: 0px 1px 4px solid rgba(0, 0, 0, 0.2);
+}
+
+ul li:hover {
+    cursor: pointer;
+    background-color: #FFECC7;
 }
