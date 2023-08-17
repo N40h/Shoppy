@@ -29,3 +29,6 @@ You can remove anything as needed, simply click on it to remove them.
 The Shopping List Web App is a versatile tool designed to simplify and enhance your shopping experience.
 Whether you're shopping for groceries, home essentials, or gifts, this app will help you stay organized, save time, and never miss something again.
 Start using it today to make your shopping trips more efficient and enjoyable!
+
+https://coolors.co/22223b-4a4e69-9a8c98-c9ada7-f2e9e4
+https://coolors.co/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff
