@@ -2,8 +2,6 @@
 
 A simple shopping list web app made with HTML, CSS, JavaScript and Firebase that will act as a fake app for iOS and Android
 
-You can find a demo [here](https://shoppy-naoh.netlify.app/)
-
 ## Documentation
 
 ### Introduction
