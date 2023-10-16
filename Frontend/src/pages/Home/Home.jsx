@@ -15,7 +15,7 @@ export default function Home() {
 
     const fetchShoppingList = async () => {
         try {
-            const response = await fetch('http://localhost:4000/api/shopping-list')
+            const response = await fetch('https://mern-shoppy.onrender.com/api/shopping-list')
 
             if (!response.ok) {
                 throw new Error('Network response was not ok')
@@ -30,7 +30,7 @@ export default function Home() {
 
     const handleAddItem = async () => {
         try {
-            const response = await fetch('http://localhost:4000/api/shopping-list', {
+            const response = await fetch('https://mern-shoppy.onrender.com/api/shopping-list', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ export default function Home() {
 
     const handleDeleteItem = async (itemID) => {
         try {
-            const response = await fetch(`http://localhost:4000/api/shopping-list/${itemID}`, {
+            const response = await fetch(`https://mern-shoppy.onrender.com/api/shopping-list/${itemID}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
