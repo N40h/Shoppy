@@ -11,11 +11,14 @@ export default function Home() {
 
     useEffect(() => {
         fetchShoppingList();
-    }, [])
+    }, [token]);
 
     const fetchShoppingList = async () => {
         try {
-            const response = await fetch('https://mern-shoppy.onrender.com/api/shopping-list')
+            const response = await fetch('https://mern-shoppy.onrender.com/api/shopping-list', {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+            }})
 
             if (!response.ok) {
                 throw new Error('Network response was not ok')
@@ -39,7 +42,7 @@ export default function Home() {
                 body: JSON.stringify({ name: inputValue})
             })
 
-            fetchShoppingList();
+            await fetchShoppingList();
             setInputValue('');
         } catch (error) {
             console.error(error)
@@ -55,7 +58,7 @@ export default function Home() {
                     Authorization: `Bearer ${token}`
                 },
             })
-            fetchShoppingList();
+            await fetchShoppingList();
         } catch (error) {
             console.error(error)
         }

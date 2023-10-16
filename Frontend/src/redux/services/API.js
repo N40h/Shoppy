@@ -18,6 +18,9 @@ export const register = (email, password) => {
 				const data = await response.json();
 				dispatch(setRegister());
 				return data;
+			} else {
+				const errorData = await response.json();
+				throw new Error(errorData.message);
 			}
 		} catch (error) {
 			console.log(error);
@@ -44,6 +47,9 @@ export const login = (email, password) => {
 				dispatch(setLogin({ token: data.token }));
 				sessionStorage.setItem('user', data.token);
 				return data;
+			} else {
+				const errorData = await response.json();
+				throw new Error(errorData.message);
 			}
 		} catch (error) {
 			console.log(error);

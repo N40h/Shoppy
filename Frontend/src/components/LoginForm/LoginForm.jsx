@@ -12,8 +12,13 @@ export default function LoginForm() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        dispatch(login(email, password))
-        navigate('/')
+        try {
+            await dispatch(login(email, password))
+            navigate('/')
+        } catch (error) {
+            console.log(error);
+        }
+        
     }
 
     return (

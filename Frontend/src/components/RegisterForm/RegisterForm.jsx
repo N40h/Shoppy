@@ -12,8 +12,12 @@ export default function RegisterForm() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        dispatch(register(email, password))
-        navigate('/');
+        try {
+            await dispatch(register(email, password))
+            navigate('/');
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     return (

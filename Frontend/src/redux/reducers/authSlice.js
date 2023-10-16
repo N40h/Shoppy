@@ -13,9 +13,11 @@ const authSlice = createSlice({
 	reducers: {
 		setLogin: (state, action) => {
 			state.token = action.payload.token;
+			state.isRegister = false;
 		},
 		setLogout: (state) => {
 			state.token = null;
+			state.isRegister = false;
 		},
 		setRegister: (state) => {
 			state.isRegister = true;
