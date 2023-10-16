@@ -20,7 +20,7 @@ export const register = (email, password) => {
 				return data;
 			} else {
 				const errorData = await response.json();
-				throw new Error(errorData.message);
+				throw new Error(errorData);
 			}
 		} catch (error) {
 			console.log(error);
@@ -49,7 +49,7 @@ export const login = (email, password) => {
 				return data;
 			} else {
 				const errorData = await response.json();
-				throw new Error(errorData.message);
+				throw new Error(errorData);
 			}
 		} catch (error) {
 			console.log(error);
