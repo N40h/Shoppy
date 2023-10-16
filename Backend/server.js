@@ -17,5 +17,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/api/shopping-list', require('./routes/shopping-list.routes'));
+app.use('/api/users', require('./routes/user.routes'));
 
 app.listen(port, () => console.log(`Server listen on port ${port}`));

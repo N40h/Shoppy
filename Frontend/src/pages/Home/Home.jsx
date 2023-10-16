@@ -1,8 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react"
 import CatIcon from "../../assets/cat.png"
+import { useSelector } from "react-redux";
 
 export default function Home() {
+    const token = useSelector((state) => state.auth.token);
+
     const [inputValue, setInputValue] = useState('');
     const [shoppingItems, setShoppingItems] = useState([])
 
@@ -12,7 +15,7 @@ export default function Home() {
 
     const fetchShoppingList = async () => {
         try {
-            const response = await fetch('https://mern-shoppy.onrender.com/api/shopping-list')
+            const response = await fetch('http://localhost:4000/api/shopping-list')
 
             if (!response.ok) {
                 throw new Error('Network response was not ok')
@@ -27,10 +30,11 @@ export default function Home() {
 
     const handleAddItem = async () => {
         try {
-            const response = await fetch('https://mern-shoppy.onrender.com/api/shopping-list', {
+            const response = await fetch('http://localhost:4000/api/shopping-list', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${token}`
                 },
                 body: JSON.stringify({ name: inputValue})
             })
@@ -44,10 +48,11 @@ export default function Home() {
 
     const handleDeleteItem = async (itemID) => {
         try {
-            const response = await fetch(`https://mern-shoppy.onrender.com/api/shopping-list/${itemID}`, {
+            const response = await fetch(`http://localhost:4000/api/shopping-list/${itemID}`, {
                 method: 'DELETE',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${token}`
                 },
             })
             fetchShoppingList();

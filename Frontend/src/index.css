@@ -71,3 +71,29 @@ ul li:hover {
     cursor: pointer;
     background-color: #FFECC7;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.login__form,
+.register__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form input,
+.register__form input {
+    text-align: left;
+}
+
+.form__link {
+    margin-left: 10px;
+    font-weight: bold;
+    color: inherit;
+}
