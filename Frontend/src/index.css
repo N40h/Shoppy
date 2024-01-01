@@ -18,7 +18,21 @@ body {
 
 img {
     width: 150px;
+    /* margin: 0 auto; */
+}
+
+.cat-icon {
+    display: block;
     margin: 0 auto;
+}
+
+.icons {
+    position: absolute;
+    top: 2.5%;
+    right: 38.5%;
+    margin: 10px;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 input {
@@ -111,4 +125,22 @@ main p {
     margin-left: 10px;
     font-weight: bold;
     color: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.invalid {
+    border: 1px solid red;
 }
