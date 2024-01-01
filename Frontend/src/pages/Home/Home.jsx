@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react"
 import CatIcon from "../../assets/cat.png"
 import { useSelector } from "react-redux";
+import Menu from "../../components/Menu/Menu"
 
 export default function Home() {
     const token = useSelector((state) => state.auth.token);
@@ -18,7 +19,8 @@ export default function Home() {
             const response = await fetch('https://mern-shoppy.onrender.com/api/shopping-list', {
                 headers: {
                     Authorization: `Bearer ${token}`,
-            }})
+                }
+            })
 
             if (!response.ok) {
                 throw new Error('Network response was not ok')
@@ -39,7 +41,7 @@ export default function Home() {
                     'Content-Type': 'application/json',
                     Authorization: `Bearer ${token}`
                 },
-                body: JSON.stringify({ name: inputValue})
+                body: JSON.stringify({ name: inputValue })
             })
 
             await fetchShoppingList();
@@ -69,16 +71,20 @@ export default function Home() {
         setInputValue(value)
     }
 
-    return (
-    <React.Fragment>
-        <img src={CatIcon} alt="Shopping List Icon" />
-        <input type="text" id="input__field" onChange={handleChange} value={inputValue} placeholder="Milk" />
-        <button id="add__button" onClick={handleAddItem}>Add to cart</button>
-        <ul id="shopping__list">
-            {shoppingItems.map((item) => (
-                <li key={item._id} onClick={() => handleDeleteItem(item._id)}>{item.name}</li>
-            ))}
-        </ul>
-    </React.Fragment>
-    )
+    if (token) {
+        return (
+            <React.Fragment>
+                <img src={CatIcon} alt="Shopping List Icon" />
+                <input type="text" id="input__field" onChange={handleChange} value={inputValue} placeholder="Milk" />
+                <button id="add__button" onClick={handleAddItem}>Add to cart</button>
+                <ul id="shopping__list">
+                    {shoppingItems.map((item) => (
+                        <li key={item._id} onClick={() => handleDeleteItem(item._id)}>{item.name}</li>
+                    ))}
+                </ul>
+            </React.Fragment>
+        )
+    } else {
+        return (<Menu />)
+    }
 }

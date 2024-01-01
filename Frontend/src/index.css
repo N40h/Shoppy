@@ -33,7 +33,8 @@ input {
     margin: 10px 0;
 }
 
-button {
+button,
+.menu__links--btn {
     color: #22223b;
     background-color: #ffc8dd;
     border: 0;
@@ -79,6 +80,20 @@ main {
 
 main h1 {
     text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu__links--btn {
+    text-decoration: none;
 }
 
 .login__form,

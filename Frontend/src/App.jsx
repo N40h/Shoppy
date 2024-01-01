@@ -10,7 +10,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={token ? <Home /> : <Navigate to="/login" />} />
+        {/* <Route path="/" element={token ? <Home /> : <Navigate to="/login" />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={!token ? <Login /> : <Navigate to="/" />} />
         <Route path="/register" element={!token ? <Register /> : <Navigate to="/" />} />
       </Routes>
