@@ -58,7 +58,3 @@ export const login = (email, password) => {
 		}
 	};
 };
-
-export const logout = () => {
-	sessionStorage.removeItem('user');
-};

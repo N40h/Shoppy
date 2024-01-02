@@ -76,7 +76,8 @@ export default function AuthenticatedHome() {
     }
 
     const handleLogout = () => {
-        dispatch(setLogout())
+        dispatch(setLogout());
+        sessionStorage.removeItem('user');
     }
 
     return (
