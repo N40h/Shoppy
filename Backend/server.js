@@ -9,7 +9,7 @@ connectDB();
 const app = express();
 
 const corsOptions = {
-	origin: '*',
+	origin: 'https://shoppy-live.netlify.app',
 	credentials: true,
 };
 app.use(cors(corsOptions));
