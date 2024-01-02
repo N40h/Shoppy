@@ -9,15 +9,6 @@ import { updateToken } from "./redux/reducers/authSlice";
 
 export default function App() {
   const token = useSelector((state) => state.auth.token)
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    const storedToken = sessionStorage.getItem('user');
-
-    if (storedToken && !token) {
-      dispatch(updateToken(storedToken))
-    }
-  }, [token, dispatch])
 
   return (
     <BrowserRouter>
