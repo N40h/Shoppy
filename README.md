@@ -2,7 +2,7 @@
 
 A simple shopping list web app made with HTML, CSS, JavaScript and Firebase that will act as a fake app for iOS and Android
 
-You can find a demo [here](https://shoppy-naoh.netlify.app/)
+You can find a demo [here](https://shoppy-live.netlify.app/)
 
 ## Documentation
 
@@ -41,7 +41,7 @@ Start using it today to make your shopping trips more efficient and enjoyable!
 To add the app on your Android smartphone follow those steps:
 
 - Open up your default browser on your phone (Google Chrome)
-- Write this exact URL https://shoppy-naoh.netlify.app/ on your phone
+- Write this exact URL https://shoppy-live.netlify.app/ on your phone
 - Press the 3 dots on the top right corner to open up the menu
 - Select "Add to Home screen"
 - Change the display name if you want and press "Add"
@@ -52,7 +52,7 @@ To add the app on your Android smartphone follow those steps:
 To add the app on your Iphone follow those steps:
 
 - Open up your default browser on your phone (Safari)
-- Write this exact URL https://shoppy-naoh.netlify.app/ on your phone
+- Write this exact URL https://shoppy-live.netlify.app/ on your phone
 - Press the middle button that will open up the menu
 - Select "Add to Home screen"
 - Change the display name if you want and press "Add"
