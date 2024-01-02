@@ -3,9 +3,7 @@ import Home from "./pages/Home/Home";
 import AuthenticatedHome from "./pages/Home/AuthenticatedHome";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
-import { updateToken } from "./redux/reducers/authSlice";
+import { useSelector } from "react-redux";
 
 export default function App() {
   const token = useSelector((state) => state.auth.token)

@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const token = sessionStorage.getItem('user');
+const token = localStorage.getItem('user');
 
 const initialState = {
 	token: token ? token : null,
@@ -29,13 +29,9 @@ const authSlice = createSlice({
 		setError: (state, action) => {
 			state.error = action.payload;
 		},
-		updateToken: (state, action) => {
-			state.token = action.payload;
-		},
 	},
 });
 
-export const { setLogin, setLogout, setRegister, setError, updateToken } =
-	authSlice.actions;
+export const { setLogin, setLogout, setRegister, setError } = authSlice.actions;
 export const selectError = (state) => state.auth.error;
 export default authSlice.reducer;
