@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const connectDB = require('./config/db');
+const connectDB = require('./Backend/config/db');
 const dotenv = require('dotenv').config();
 const path = require('path');
 const port = process.env.PORT || 5000;
@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.use('/api/shopping-list', require('./routes/shopping-list.routes'));
-app.use('/api/users', require('./routes/user.routes'));
+app.use('/api/shopping-list', require('./Backend/routes/shopping-list.routes'));
+app.use('/api/users', require('./Backend/routes/user.routes'));
 
 app.listen(port, () => console.log(`Server listen on port ${port}`));
