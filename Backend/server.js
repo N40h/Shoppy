@@ -2,11 +2,20 @@ const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/db');
 const dotenv = require('dotenv').config();
+const path = require('path');
 const port = process.env.PORT || 5000;
 
 connectDB();
 
 const app = express();
+
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static('Frontend/build'));
+
+	app.get('*', (req, res) => {
+		res.sendFile(path.resolve(__dirname, '../Frontend', 'build', 'index.html'));
+	});
+}
 
 const corsOptions = {
 	origin: 'https://shoppy-live.netlify.app',
