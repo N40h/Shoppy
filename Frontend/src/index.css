@@ -9,7 +9,7 @@ body {
     align-items: center;
 }
 
-.container {
+#root {
     display: flex;
     flex-direction: column;
     max-width: 320px;
@@ -18,7 +18,21 @@ body {
 
 img {
     width: 150px;
+    /* margin: 0 auto; */
+}
+
+.cat-icon {
+    display: block;
     margin: 0 auto;
+}
+
+.icons {
+    position: absolute;
+    top: 3.5%;
+    right: 9%;
+    margin: 10px;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 input {
@@ -33,7 +47,8 @@ input {
     margin: 10px 0;
 }
 
-button {
+button,
+.menu__links--btn {
     color: #22223b;
     background-color: #ffc8dd;
     border: 0;
@@ -70,4 +85,62 @@ ul li {
 ul li:hover {
     cursor: pointer;
     background-color: #FFECC7;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu__links--btn {
+    text-decoration: none;
+}
+
+.login__form,
+.register__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form input,
+.register__form input {
+    text-align: left;
+}
+
+.form__link {
+    margin-left: 10px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.invalid {
+    border: 1px solid red;
 }

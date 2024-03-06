@@ -1,34 +1,30 @@
-# Mobile Shopping List App
+# Shoppy
 
-A simple shopping list web app made with HTML, CSS, JavaScript and Firebase that will act as a fake app for iOS and Android
-
-## Documentation
+## Documentation FR
 
 ### Introduction
 
-This Shopping List Web App is a user-friendly online tool designed to help you organize and manage your shopping needs.
-With its intuitive interface and simple features, you can easily add, remove, and track anything you need, ensuring you never forget something when you go shopping.
+Cette application web de liste de courses est un outil convivial en ligne conçu pour vous aider à organiser et gérer vos besoins en matière de courses. Avec son interface intuitive et ses fonctionnalités simples, vous pouvez facilement ajouter, supprimer et suivre tout ce dont vous avez besoin, vous assurant de ne jamais oublier quelque chose lorsque vous faites vos courses.
 
-### Features
+### Fonctionnalités
 
-**Add Anything and Manage List**
-You can add anything that you need to purchase by simply write it into the field, and click on the ADD TO CART button, it will be added to the list.
-You can also remove anything from your shopping list by simply clicking into it as your needs change.
+**Ajouter n'importe quoi et gérer la liste**
+Vous pouvez ajouter tout ce dont vous avez besoin d'acheter en le saisissant simplement dans le champ et en cliquant sur le bouton AJOUTER AU PANIER, il sera ajouté à la liste. Vous pouvez également supprimer n'importe quoi de votre liste de courses en cliquant simplement dessus lorsque vos besoins changent.
 
-### Getting Started
+### Pour Commencer
 
-**Add Anything:**
-Within your shopping list, start adding anything you need to buy.
-Write the name in the field and click on the ADD TO CART button.
+**Ajouter n'importe quoi:**
+Au sein de votre liste de courses, commencez à ajouter tout ce dont vous avez besoin d'acheter.
+Écrivez le nom dans le champ et cliquez sur le bouton AJOUTER AU PANIER.
 
-**Remove Anything:**
-You can remove anything as needed, simply click on it to remove them.
+**Supprimer n'importe quoi:**
+Vous pouvez supprimer n'importe quoi selon vos besoins, il vous suffit de cliquer dessus pour les supprimer.
 
 ### Conclusion
 
-The Shopping List Web App is a versatile tool designed to simplify and enhance your shopping experience.
-Whether you're shopping for groceries, home essentials, or gifts, this app will help you stay organized, save time, and never miss something again.
-Start using it today to make your shopping trips more efficient and enjoyable!
+Shoppy est un outil polyvalent conçu pour simplifier et améliorer votre expérience de shopping.
+Que vous fassiez des courses pour l'épicerie, des articles essentiels pour la maison ou des cadeaux, cette application vous aidera à rester organisé, à gagner du temps et à ne rien oublier.
+Commencez à l'utiliser dès aujourd'hui pour rendre vos sorties shopping plus efficaces et agréables!
 
 ---
 
@@ -36,22 +32,22 @@ Start using it today to make your shopping trips more efficient and enjoyable!
 
 ### Android
 
-To add the app on your Android smartphone follow those steps:
+Pour ajouter l'application sur votre smartphone Android, suivez ces étapes:
 
-- Open up your default browser on your phone (Google Chrome)
-- Write this exact URL https://shoppy-naoh.netlify.app/ on your phone
-- Press the 3 dots on the top right corner to open up the menu
-- Select "Add to Home screen"
-- Change the display name if you want and press "Add"
-- Now the app is located to the last position of all the apps
+- Ouvrez votre navigateur par défaut sur votre téléphone (Google Chrome)
+- Écrivez cette URL exact https://shoppy-live.netlify.app/ sur votre téléphone
+- Appuyez sur les 3 points en haut à droite pour ouvrir le menu
+- Sélectionnez "Ajouter à l'écran d'accueil"
+- Modifiez le nom d'affichage si vous le souhaitez et appuyer sur "Ajouter"
+- Maintenant, l'application est située en dernière position de toutes les applications
 
 ### iOS
 
-To add the app on your Iphone follow those steps:
+Pour ajouter l'application sur votre iPhone, suivez ces étapes:
 
-- Open up your default browser on your phone (Safari)
-- Write this exact URL https://shoppy-naoh.netlify.app/ on your phone
-- Press the middle button that will open up the menu
-- Select "Add to Home screen"
-- Change the display name if you want and press "Add"
-- Now the app is located to the last position of all the apps
+- Ouvrez votre navigateur par défaut sur votre téléphone (Safari)
+- Écrivez cette URL exact https://shoppy-live.netlify.app/ sur votre téléphone
+- Appuyez sur le bouton du milieu qui ouvrira le menu
+- Sélectionnez "Ajouter à l'écran d'accueil"
+- Modifiez le nom d'affichage si vous le souhaitez et appuyer sur "Ajouter"
+- Maintenant, l'application est située en dernière position de toutes les applications
