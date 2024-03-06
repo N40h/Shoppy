@@ -2,6 +2,8 @@
 
 ## Documentation FR
 
+La documentation est également disponibles en [Anglais](./Documentation/US/README.md)
+
 ### Introduction
 
 Cette application web de liste de courses est un outil convivial en ligne conçu pour vous aider à organiser et gérer vos besoins en matière de courses. Avec son interface intuitive et ses fonctionnalités simples, vous pouvez facilement ajouter, supprimer et suivre tout ce dont vous avez besoin, vous assurant de ne jamais oublier quelque chose lorsque vous faites vos courses.
