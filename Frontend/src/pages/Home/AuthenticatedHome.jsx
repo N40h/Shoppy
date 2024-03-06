@@ -20,11 +20,6 @@ export default function AuthenticatedHome() {
 
     const fetchShoppingList = async () => {
         try {
-            // const response = await fetch('https://mern-shoppy.onrender.com/api/shopping-list', {
-            //     headers: {
-            //         Authorization: `Bearer ${token}`,
-            //     }
-            // })
             const response = await fetch('https://n40h-shoppy-backend-ac8798eed8d1.herokuapp.com/api/shopping-list', {
                 headers: {
                     Authorization: `Bearer ${token}`,
@@ -44,14 +39,6 @@ export default function AuthenticatedHome() {
 
     const handleAddItem = async () => {
         try {
-            // const response = await fetch('https://mern-shoppy.onrender.com/api/shopping-list', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //         Authorization: `Bearer ${token}`
-            //     },
-            //     body: JSON.stringify({ name: inputValue })
-            // })
             const response = await fetch('https://n40h-shoppy-backend-ac8798eed8d1.herokuapp.com/api/shopping-list', {
                 method: 'POST',
                 headers: {
@@ -70,13 +57,6 @@ export default function AuthenticatedHome() {
 
     const handleDeleteItem = async (itemID) => {
         try {
-            // const response = await fetch(`https://mern-shoppy.onrender.com/api/shopping-list/${itemID}`, {
-            //     method: 'DELETE',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //         Authorization: `Bearer ${token}`
-            //     },
-            // })
             const response = await fetch(`https://n40h-shoppy-backend-ac8798eed8d1.herokuapp.com/api/shopping-list/${itemID}`, {
                 method: 'DELETE',
                 headers: {
